@@ -120,6 +120,17 @@ nav a {
   line-height: 1.4;
 }
 
+#contato a {
+  color: #3a693e;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#contato a:hover {
+  text-decoration: underline;
+}
+
+
 /* Link normal */
 a.meu-link {
   color: #3a693e; /* cor do link */
@@ -394,3 +405,4 @@ footer p {
 .card p {
   text-align: justify;
 }
+
