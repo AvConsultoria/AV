@@ -109,12 +109,12 @@ nav a {
   object-fit: contain;
 }
 
-.card-servico p,
+.card-servico h5,
 .card-servico a {
   text-align: center; /* 👈 texto e link no centro */
 }
 
-.card-servico p {
+.card-servico h5 {
   color: #3a693e;
   font-weight: 500;
   line-height: 1.4;
@@ -405,6 +405,7 @@ footer p {
 .card p {
   text-align: justify;
 }
+
 
 
 
