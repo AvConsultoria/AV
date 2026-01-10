@@ -121,15 +121,15 @@ nav a {
 }
 
 #contato a {
-  color: #3a693e;
+  color: #000000 !important;
   font-weight: 600;
   text-decoration: none;
 }
 
 #contato a:hover {
+  color: #2f5633 !important;
   text-decoration: underline;
 }
-
 
 /* Link normal */
 a.meu-link {
@@ -405,4 +405,6 @@ footer p {
 .card p {
   text-align: justify;
 }
+
+
 
