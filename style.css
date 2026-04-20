@@ -946,3 +946,171 @@ a.meu-link:hover {
 #gestao-e-social .card-institucional {
   max-width: 600px;
 }
+
+/* ================= MOBILE GERAL ================= */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  /* HEADER */
+  .header-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  /* HERO */
+  .hero {
+    padding: 60px 15px;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-img img {
+    max-width: 250px;
+  }
+
+  /* BOTÃO */
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* CARDS SERVIÇOS */
+  .cards-servicos {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .card-servico {
+    padding: 25px;
+  }
+
+  /* DIFERENCIAIS */
+  .container-diferencial {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .card-diferencial {
+    font-size: 1rem;
+  }
+
+  /* INSTITUCIONAL */
+  .cards-institucional {
+    grid-template-columns: 1fr;
+  }
+
+  /* AGENDAMENTO */
+  .agendamento-header h1 {
+    font-size: 24px;
+  }
+
+  .stepper {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .line {
+    display: none;
+  }
+
+  /* GRID TIPO */
+  .grid-tipo {
+    grid-template-columns: 1fr;
+  }
+
+  /* FORM */
+  .form-card {
+    padding: 20px;
+  }
+
+  .input-row {
+    grid-template-columns: 1fr;
+  }
+
+  .form-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn-light,
+  .btn-primary {
+    width: 100%;
+  }
+
+  /* FOOTER */
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-col img {
+    margin: auto;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* WHATSAPP */
+  .whatsapp-float {
+    width: 55px;
+    height: 55px;
+    bottom: 15px;
+    right: 15px;
+  }
+}
+
+/* ================= MOBILE PEQUENO ================= */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .hero {
+    padding: 50px 10px;
+  }
+
+  .hero-img img {
+    max-width: 200px;
+  }
+
+  .card-servico h3 {
+    font-size: 18px;
+  }
+
+  .card-servico p {
+    font-size: 13px;
+  }
+
+  .agendamento-header h1 {
+    font-size: 20px;
+  }
+}
