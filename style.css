@@ -28,6 +28,12 @@ body {
 /* HEADER */
 header {
   background: linear-gradient(135deg, #5a94eb, #ffffff);
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  backdrop-filter: blur(10px);
 }
 
 .header-content {
