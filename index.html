@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AV Consultoria e Treinamentos</title>
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AV Consultoria e Treinamentos</title>
 
-    <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- SEU JS -->
+  <script src="script.js" defer></script>
+</head>
 
   <body>
     <!-- HEADER -->
@@ -21,12 +24,14 @@
      <div class="container">
     <div class="header-content">
         <h1>AV Consultoria e Treinamentos</h1>
-        <nav>
+        <nav id="menu">
           <a href="#sobre">Quem Somos</a>
           <a href="#servicos">Serviços</a>
           <a href="#diferencial">Diferencial</a>
           <a href="#contato">Contato</a>
         </nav>
+
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
       </div>
     </header>
 
@@ -54,12 +59,19 @@
         </div>
 
         <div class="hero-img">
-          <img src="img/av branco.png" alt="AV Consultoria" />
+          <img src="img/logo ofc.png" alt="AV Consultoria" />
         </div>
       </div>
+       <!-- INDICADOR DE SCROLL -->
+  <div class="scroll-indicator">
+    <div class="scroll-mouse">
+      <div class="scroll-dot"></div>
+    </div>
+  </div>
     </section>
 
     <!-- SOBRE -->
+      <section id="sobre" class="section bg"></section>
     <section class="section">
       <div class="container">
         <h2>Quem Somos</h2>
@@ -81,8 +93,10 @@
           problemas futuros.
         </p>
 
+        
         <div class="cards-institucional">
           <div class="card-institucional">
+             <img src="img/missão.png" alt="Missão" class="icon-card">
             <h3>Missão</h3>
             <p>
               Desenvolver um trabalho eficaz que atenda às necessidades dos
@@ -93,6 +107,7 @@
           </div>
 
           <div class="card-institucional">
+            <img src="img/visão.png" alt="Visão" class="icon-card">
             <h3>Visão</h3>
             <p>
               Ser a empresa referência do Estado pelo trabalho de qualidade
@@ -101,6 +116,7 @@
           </div>
 
           <div class="card-institucional">
+            <img src="img/valores.png" alt="Valores" class="icon-card">
             <h3>Valores</h3>
             <p>
               Qualidade e excelência no cuidado da Saúde e Segurança dos
@@ -117,71 +133,382 @@
       <div class="container">
         <h2>Nossos Serviços</h2>
 
-        <div class="cards-servicos">
-          <!-- CARD 1 -->
-          <div class="card-servico">
-            <div class="card-icon">
-              <img src="img/Programas (1).png" alt="Elaboração de Programas" />
-            </div>
-            <h5>
-              <b>Elaboração dos programas</b> <br />
-              <br />
-              GRO/PGR <br />
-              LTCAT <br />
-              PCMSO <br />
-              <br />
-              <a href="explicação.html">Ver Mais</a>
-            </h5>
-          </div>
+       <div class="cards-servicos">
 
-          <!-- CARD 2 -->
-          <div class="card-servico">
-            <div class="card-icon">
-              <img
-                src="img/cursos e treinamentos.png"
-                alt="Cursos e Treinamentos"
-              />
-            </div>
-            <h5><b>Cursos e Treinamentos</b></h5>
-            <br />
-            <a href="explicação.html">Ver Mais</a>
-          </div>
+<!-- CARD 1 -->
+<div class="card-servico">
 
-          <!-- CARD 3 -->
-          <div class="card-servico">
-            <div class="card-icon">
-              <img src="img/sociais.png" alt="Gestão E-Social" />
-            </div>
-            <h5><b>Gestão E-Social</b></h5>
-            <br />
-            <a href="explicação.html">Ver Mais</a>
-          </div>
+<div class="card-icon">
+<img src="img/programas.png">
+</div>
 
-          <!-- CARD 4 -->
-          <div class="card-servico">
-            <div class="card-icon">
-              <img src="img/saude.png" alt="Clínicas Parceiras" />
-            </div>
-            <h5><b>Clínicas Parceiras</b></h5>
-          </div>
+<h3>Elaboração dos programas</h3>
+
+<p>
+Documentações essenciais para conformidade legal e segurança do trabalho.
+</p>
+
+<hr>
+
+<ul>
+<li>GRO (Gerenciamento de Riscos Ocupacionais)<br/> PGR (Programa de Gerenciamento de Riscos)</li>
+
+<li>LTCAT (Laudo Técnico das Condições Ambientais do Trabalho)</li>
+<li>PCMSO (Programa de Controle Médico de Saúde Ocupacional)</li>
+</ul>
+
+<a href="explicação.html">Ver Mais</a>
+
+</div>
+
+
+<!-- CARD 2 -->
+<div class="card-servico">
+
+<div class="card-icon">
+<img src="img/cursos.png">
+</div>
+
+<h3>Cursos e Treinamentos</h3>
+
+<p>
+Capacitações obrigatórias e especializadas conforme normas regulamentadoras.
+</p>
+
+<hr>
+
+<ul>
+<li>NR obrigatórias</li>
+<li>Treinamentos práticos</li>
+<li>Certificação válida</li>
+</ul>
+
+<a href="https://wa.me/5579998163248" target="_blank">Ver Mais</a>
+
+</div>
+
+
+<!-- CARD 3 -->
+<div class="card-servico">
+
+<div class="card-icon">
+<img src="img/e-social.png">
+</div>
+
+<h3>Gestão E-Social</h3>
+
+<p>
+Envio correto das informações de SST para evitar multas e inconsistências.
+</p>
+
+<hr>
+
+<ul>
+<li>Eventos S-2210</li>
+<li>Eventos S-2220</li>
+<li>Eventos S-2240</li>
+</ul>
+
+<a href="explicação.html">Ver Mais</a>
+
+</div>
+
+
+<!-- CARD 4 -->
+<div class="card-servico">
+
+<div class="card-icon">
+<img src="img/saude.png">
+</div>
+
+<h3>Clínicas Parceiras</h3>
+
+<p>
+Rede de clínicas credenciadas para exames ocupacionais completos.
+</p>
+
+<hr>
+
+<ul>
+<li>Admissional</li>
+<li>Periódico</li>
+<li>Demissional</li>
+</ul>
+
+<a href="https://wa.me/5579998163248" target="_blank">Ver Mais</a>
+
+</div>
+
+
+<!-- CARD 5 -->
+<div class="card-servico">
+
+<div class="card-icon">
+<img src="img/frentista.png">
+</div>
+
+<h3>Curso de Frentista</h3>
+
+<p>
+Formação profissional com certificação válida e prática orientada.
+</p>
+
+<hr>
+
+<ul>
+<li>Segurança</li>
+<li>Atendimento</li>
+<li>Procedimentos operacionais</li>
+</ul>
+
+<a href="https://wa.me/5579998163248" target="_blank">Ver Mais</a>
+
+</div>
+
+
+<!-- CARD 6 -->
+<div class="card-servico">
+
+<div class="card-icon">
+<img src="img/porteiro.png">
+</div>
+
+<h3>Curso de Porteiro</h3>
+
+<p>
+Treinamento completo para atuação profissional em controle de acesso.
+</p>
+
+<hr>
+
+<ul>
+<li>Controle de entrada</li>
+<li>Postura profissional</li>
+<li>Segurança patrimonial</li>
+</ul>
+
+<a href="https://wa.me/5579998163248" target="_blank">Ver Mais</a>
+
+</div>
+
+</div>
+
         </div>
       </div>
     </section>
 
     <!-- DIFERENCIAL -->
-    <section id="diferencial" class="section">
+     <section id="diferencial" class="section">
       <div class="container">
-        <h2>Nosso Diferencial</h2>
-        <br />
+        <h2>Nossos Diferenciais</h2>
+        <div class="container-diferencial">
+            <div class="card-diferencial">
+                <div class="numero">1</div>
+                <p>Atendimento especializado</p>
+            </div>
+            <div class="card-diferencial">
+                <div class="numero">2</div>
+                <p>Gestão abrangente</p>
+            </div>
+            <div class="card-diferencial">
+                <div class="numero">3</div>
+                <p>Parceria com clínicas</p>
+            </div>
+            <div class="card-diferencial">
+                <div class="numero">4</div>
+                <p>Agilidade e eficiência</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-        <ul class="lista">
-          <li>✔ Atendimento especializado</li>
-          <li>✔ Agilidade</li>
-          <li>✔ Gestão completa</li>
-          <li>✔ Compromisso com a vida</li>
-        </ul>
-      </div>
-    </section>
+<!-- AGENDAMENTO -->
+<section class="agendamento">
+
+<div class="agendamento-container">
+
+<!-- HEADER -->
+<div class="agendamento-header">
+<span>AGENDAMENTO</span>
+<h1>Agendar Atendimento</h1>
+<p>Escolha o tipo de atendimento e preencha seus dados</p>
+</div>
+
+<!-- STEPPER -->
+<div class="stepper">
+
+<div class="step active">
+<div class="step-num">1</div>
+<span>Tipo</span>
+</div>
+
+<div class="line"></div>
+
+<div class="step">
+<div class="step-num">2</div>
+<span>Dados</span>
+</div>
+
+<div class="line"></div>
+
+<div class="step">
+<div class="step-num">3</div>
+<span>Horário</span>
+</div>
+
+</div>
+
+<!-- STEP 1 -->
+<div id="step1-card" class="card-tipo">
+
+<h2>Selecione o tipo de atendimento</h2>
+
+<div class="grid-tipo">
+
+<div class="tipo-item"
+onclick="selecionarServico('Consulta Online')">
+
+<div class="icon">💻</div>
+
+<h3>Consulta Online</h3>
+
+<p>Atendimento remoto</p>
+
+</div>
+
+
+<div class="tipo-item"
+onclick="selecionarServico('Consulta Presencial')">
+
+<div class="icon">🏥</div>
+
+<h3>Consulta Presencial</h3>
+
+<p>Atendimento no consultório</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- STEP 2 -->
+<div id="formulario" class="card-form" style="display:none;">
+
+<h3>Seus dados</h3>
+
+<!-- Nome -->
+<div class="input-group full">
+<span></span>
+<input
+type="text"
+id="nome"
+placeholder="Nome completo"
+/>
+</div>
+
+
+<!-- Linha telefone + email -->
+<div class="input-row">
+
+<div class="input-group">
+<span></span>
+<input
+type="text"
+id="telefone"
+placeholder="Telefone/WhatsApp"
+/>
+</div>
+
+
+<div class="input-group">
+<span></span>
+<input
+type="email"
+id="email"
+placeholder="E-mail"
+/>
+</div>
+
+</div>
+
+
+<!-- Condomínio -->
+<div class="input-group full">
+<span></span>
+<input
+type="text"
+id="condominio"
+placeholder="Nome do Condomínio"
+/>
+</div>
+
+<textarea 
+  class="textarea-agendamento"
+  placeholder="Descreva brevemente sua necessidade (opcional)"
+  rows="3">
+</textarea>
+
+<!-- BOTÕES -->
+<div class="form-buttons">
+
+<button
+type="button"
+class="btn-light"
+onclick="voltarStep1()">
+Voltar
+</button>
+
+
+<button
+type="button"
+class="btn-primary"
+onclick="proximoStep3()">
+Próximo
+</button>
+
+</div>
+
+</div>
+
+
+
+<!-- STEP 3 -->
+<div id="step3" style="display:none;">
+
+<h3>Escolha o horário</h3>
+
+
+<p>
+Após escolher o horário, finalize pelo WhatsApp.
+</p>
+
+
+<div class="form-buttons">
+
+<button
+type="button"
+class="btn-light"
+onclick="voltarStep2()">
+Voltar
+</button>
+
+
+<button
+type="button"
+class="btn-primary"
+onclick="enviarWhatsApp()">
+Confirmar Agendamento
+</button>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
 
     <!-- CONTATO -->
     <section id="contato" class="section bg">
@@ -213,28 +540,57 @@
           </a>
         </p>
 
-        <!-- IMAGEM EMBAIXO DOS CONTATOS -->
-        <div class="imagem-contato">
-          <img src="img/logo ofc.png" alt="Imagem de contato AV Consultoria" />
-        </div>
+        
       </div>
     </section>
 
-    <!-- BOTÃO WHATSAPP -->
-    <a href="https://wa.me/5579998163248" class="whatsapp-float" target="_blank"
-      >💬</a
-    >
+  <!-- BOTÃO WHATSAPP -->
+<a href="https://wa.me/5579998163248"
+class="whatsapp-float"
+target="_blank"
+aria-label="Fale conosco no WhatsApp">
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="35" height="35" fill="white">
+<path d="M16 .396C7.163.396 0 7.56 0 16.396c0 2.89.757 5.71 2.195 8.197L.042 31.958l7.52-2.116a15.94 15.94 0 0 0 8.438 2.421c8.837 0 16-7.163 16-16S24.837.396 16 .396zm0 29.272a13.2 13.2 0 0 1-6.733-1.847l-.482-.288-4.463 1.256 1.19-4.35-.314-.504A13.19 13.19 0 1 1 16 29.668zm7.272-9.845c-.397-.199-2.35-1.158-2.712-1.291-.362-.132-.626-.198-.89.199-.264.397-1.022 1.291-1.253 1.556-.23.264-.461.297-.858.099-.397-.199-1.675-.617-3.19-1.966-1.178-1.05-1.973-2.347-2.204-2.744-.23-.397-.025-.611.173-.81.178-.177.397-.461.595-.692.199-.231.264-.397.397-.661.132-.264.066-.496-.033-.694-.099-.199-.89-2.149-1.219-2.94-.32-.77-.646-.666-.89-.678l-.757-.013c-.264 0-.694.099-1.057.496-.362.397-1.388 1.356-1.388 3.305 0 1.949 1.421 3.832 1.619 4.097.199.264 2.797 4.268 6.781 5.984.947.409 1.684.653 2.26.835.949.301 1.814.258 2.497.156.762-.114 2.35-.959 2.682-1.885.331-.926.331-1.721.231-1.885-.099-.165-.363-.264-.76-.463z"/>
+</svg>
+
+</a>
 
     <!-- FOOTER -->
-    <footer>
-      <p>© 2026 AV Consultoria e Treinamentos</p>
-    </footer>
+   <footer class="footer-profissional">
+  <div class="container footer-content">
+    
+    <div class="footer-col">
+       <img src="img/logo no fundo branco.png" alt="Imagem de contato AV Consultoria" />
+      <p>
+        Técnica em Saúde e Segurança do Trabalho, Síndica Profissional, Graduada em Letras e Pedagogia, com pós-graduação em Psicopedagogia Institucional e Clínica, atuando com foco em gestão eficiente de condomínios, comunicação estratégica, organização educacional e desenvolvimento humano, prezando sempre pela transparência, responsabilidade e excelência nos serviços prestados.
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Links Rápidos</h3>
+      <ul>
+        <li><a href="#sobre">Quem Somos</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#diferencial">Diferenciais</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Contato</h3>
+      <p>📞 (79) 9 9816-3248</p>
+      <p>✉️ avconsultoriaetreinamentoss@gmail.com</p>
+      <p>📍 Aracaju, Sergipe</p>
+    </div>
+
+  </div>
+
+  <div class="footer-copy">
+    <p>© 2026 AV Consultoria e Treinamentos</p>
+  </div>
+</footer>
 
     <script src="script.js"></script>
   </body>
 </html>
-
-
-
-
-
