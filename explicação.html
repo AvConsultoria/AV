@@ -20,24 +20,26 @@
     <div class="container">
     <div class="header-content">
     <h1>AV Consultoria e Treinamentos</h1>
-    <nav>
+    <nav id="menu">
       <a href="index.html">Página inicial</a>
-      <a href="#elaboracao-dos-programas">Programas</a>
-      <a href="#curso-brigada-de-incendio">Brigada de Incêndio</a>
-      <a href="#gestao-e-social">E-Social</a>
+      <a href="explicacao.html#elaboracao-dos-programas">Programas</a>
+      <a href="explicacao.html#gestao-e-social">E-Social</a>
     </nav>
+
+     <div class="menu-toggle" onclick="toggleMenu()">☰</div>
   </div>
 </header>
 
 
     <!-- HERO -->
-    <section class="hero">
+       <section class="hero">
       <div class="hero-content">
         <div class="hero-text">
           <h2>
-            Protegendo vidas,
+            Protegendo vidas,<br />
             impulsionando negócios
-          </h2> <br />
+          </h2>
+          <br />
           <p>
             Nossa missão é garantir que cada dia de trabalho seja seguro e
             produtivo.
@@ -53,9 +55,15 @@
         </div>
 
         <div class="hero-img">
-          <img src="img/av branco.png" alt="AV Consultoria" />
+          <img src="img/logo ofc.png" alt="AV Consultoria" />
         </div>
       </div>
+       <!-- INDICADOR DE SCROLL -->
+  <div class="scroll-indicator">
+    <div class="scroll-mouse">
+      <div class="scroll-dot"></div>
+    </div>
+  </div>
     </section>
  
 <section id="elaboracao-dos-programas" class="section">
@@ -117,22 +125,7 @@
           </div>
         </div>
   </section>
-
-<section id="curso-brigada-de-incendio" class="section">
- <section class="galeria-fotos">
-      <h2>Curso Brigada de Incêndio</h2>
-
-      <div class="grid-galeria">
-        <img src="img/foto1.jpg" alt="Foto 1" />
-        <img src="img/foto2.jpg" alt="Foto 2" />
-        <img src="img/foto3.jpg" alt="Foto 3" />
-        <img src="img/foto4.jpg" alt="Foto 4" />
-        <img src="img/foto5.jpg" alt="Foto 5" />
-        <img src="img/foto6.jpg" alt="Foto 6" />
-        <img src="img/foto7.jpg" alt="Foto 7" />
-        <img src="img/foto8.jpg" alt="Foto 8" />
-      </div>
-    </section>
+   
 <section id="gestao-e-social" class="section">
   <div class="container">
     <h2>Gestão E-Social</h2>
@@ -163,19 +156,53 @@
 
   
 
-    <!-- BOTÃO WHATSAPP -->
-    <a href="https://wa.me/5579998163248" class="whatsapp-float" target="_blank"
-      >💬</a
-    >
+      <!-- BOTÃO WHATSAPP -->
+<a href="https://wa.me/5579998163248"
+class="whatsapp-float"
+target="_blank"
+aria-label="Fale conosco no WhatsApp">
 
-    <!-- FOOTER -->
-    <footer>
-      <p>© 2026 AV Consultoria e Treinamentos</p>
-    </footer>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="35" height="35" fill="white">
+<path d="M16 .396C7.163.396 0 7.56 0 16.396c0 2.89.757 5.71 2.195 8.197L.042 31.958l7.52-2.116a15.94 15.94 0 0 0 8.438 2.421c8.837 0 16-7.163 16-16S24.837.396 16 .396zm0 29.272a13.2 13.2 0 0 1-6.733-1.847l-.482-.288-4.463 1.256 1.19-4.35-.314-.504A13.19 13.19 0 1 1 16 29.668zm7.272-9.845c-.397-.199-2.35-1.158-2.712-1.291-.362-.132-.626-.198-.89.199-.264.397-1.022 1.291-1.253 1.556-.23.264-.461.297-.858.099-.397-.199-1.675-.617-3.19-1.966-1.178-1.05-1.973-2.347-2.204-2.744-.23-.397-.025-.611.173-.81.178-.177.397-.461.595-.692.199-.231.264-.397.397-.661.132-.264.066-.496-.033-.694-.099-.199-.89-2.149-1.219-2.94-.32-.77-.646-.666-.89-.678l-.757-.013c-.264 0-.694.099-1.057.496-.362.397-1.388 1.356-1.388 3.305 0 1.949 1.421 3.832 1.619 4.097.199.264 2.797 4.268 6.781 5.984.947.409 1.684.653 2.26.835.949.301 1.814.258 2.497.156.762-.114 2.35-.959 2.682-1.885.331-.926.331-1.721.231-1.885-.099-.165-.363-.264-.76-.463z"/>
+</svg>
+</a>
+
+   <!-- FOOTER -->
+   <footer class="footer-profissional">
+  <div class="container footer-content">
+    
+    <div class="footer-col">
+       <img src="img/logo no fundo branco.png" alt="Imagem de contato AV Consultoria" />
+      <p>
+        Técnica em Saúde e Segurança do Trabalho, Síndica Profissional, Graduada em Letras e Pedagogia, com pós-graduação em Psicopedagogia Institucional e Clínica, atuando com foco em gestão eficiente de condomínios, comunicação estratégica, organização educacional e desenvolvimento humano, prezando sempre pela transparência, responsabilidade e excelência nos serviços prestados.
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Links Rápidos</h3>
+      <ul>
+        <li><a href="#sobre">Quem Somos</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#diferencial">Diferenciais</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>Contato</h3>
+      <p>📞 (79) 9 9816-3248</p>
+      <p>✉️ avconsultoriaetreinamentoss@gmail.com</p>
+      <p>📍 Aracaju, Sergipe</p>
+    </div>
+
+  </div>
+
+  <div class="footer-copy">
+    <p>© 2026 AV Consultoria e Treinamentos</p>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
   </body>
 </html>
-
-
-
-
 
