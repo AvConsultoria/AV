@@ -26,12 +26,31 @@ body {
 }
 
 /* HEADER */
-header {
-  background: linear-gradient(135deg, #5a94eb, #ffffff);
+/* LOGO + TEXTO NO HEADER */
+/* LOGO NO HEADER */
+.logo {
+  display: flex;
+  align-items: center;
+}
 
+.logo img {
+  width: 70px;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    width: 50px;
+  }
+}
+
+header {
   position: sticky;
   top: 0;
   z-index: 1000;
+
+  background: linear-gradient(135deg, #5a94eb, #ffffff);
 }
 
 .header-content {
@@ -1255,6 +1274,7 @@ body {
 }
 
 /* ================= FOOTER ================= */
+
 @media (max-width: 768px) {
   .footer-content {
     flex-direction: column;
@@ -1283,5 +1303,29 @@ body {
 @supports (padding: max(0px)) {
   body {
     padding-bottom: max(10px, env(safe-area-inset-bottom));
+  }
+}
+/*================== AUSTES FINAIS FOOTER ================= */
+@media (max-width: 768px) {
+  .footer-col {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-col ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* CENTRALIZA DE VERDADE */
+    justify-content: center;
+    padding: 0;
+  }
+
+  .footer-col ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-col ul li a {
+    display: inline-block;
   }
 }
